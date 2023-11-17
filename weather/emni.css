@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .card-holder{
+   
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+  }
+  
+  .card
+  {
+
+    padding: 20px;
+    width: 80%;
+    background-color: rgb(58, 60, 61);
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  }
+  .card div{
+    grid-row: 2/3;
+  }
+
+  
+  p.b 
+  {
+    text-align-last: center;
+  }
+
+
+  @media (max-width: 768px)
+  {
+    .card-holder{
+      grid-template-columns: 1fr 6fr 1fr;
+    }
+    .card{
+      padding: 20px;
+    }
+  }
